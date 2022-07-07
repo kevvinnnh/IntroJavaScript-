@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script href="./variable.js">
+        //MEDIUM 
+
+// var str = prompt("Please enter a phrase: "); 
+// if (str === str.toUpperCase()){
+//     alert("you are screaming!")
+//     stop 
+// }
+// else if(str === str.toLowerCase()){
+//     alert("you are whispering")
+// }
+// else{
+//     alert("you are neither screaming nor whispering")
+// }
+
+
+// //HARD 
+
+function addition(numOne, numTwo) {
+
+    return (numOne + numTwo) ;   
+  }
+function subtraction(numOne, numTwo) {
+    return (numOne - numTwo );   
+  }
+function multiplication(numOne, numTwo) {
+    return (numOne * numTwo) ;   
+  }
+function division(numOne, numTwo) {
+    return (numOne / numTwo) ;   
+  }
+
+
+//VERY HARD 
+let  x = prompt("Please enter a number: ");
+let operator = prompt("Would you like to +, -, *, or / to this number"); 
+let  y = prompt("Please enter another number: ")
+
+var num1 = parseInt(x);
+var num2 = parseInt(y);
+
+let returnVal; 
+
+if (operator === '+'){
+    
+    returnVal = addition(num1, num2);
+    
+    stop
+   
+}
+else if (operator === '-'){
+    returnVal = subtraction(num1, num2);
+    stop 
+
+}
+else if (operator === '*'){
+    returnVal = multiplication(num1, num2); 
+    stop 
+
+}
+else if (operator === '/'){
+    returnVal = division(num1, num2); 
+    stop }
+else alert("sorry cant do that ")
+alert(`${num1} ${operator} ${num2}= ${returnVal}`)
+    </script>
+    
+</body>
+</html>
